@@ -1,0 +1,183 @@
+/*
+COLOR PALETTE
+
+Loblolly white  #C7CDD0
+Shark  dar blue #1C2426
+Fuscous Gray    #525150
+Go Ben  green   #767E4D
+
+*/
+
+/* GLOBAL STYLES (for both pages)
+-----------------------------------*/
+/* 
+  https://www.paulirish.com/2012/box-sizing-border-box-ftw/
+*/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /*set default to 10px*/
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}  
+html, body {          /*background covers screen*/
+    height: 100%;
+}
+body {
+    background-color:#c7d0ce;
+    margin: 0;   /*content will span all the way across*/
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+h1, h2, h3 {
+    font-family: "Caveat", cursive;
+    font-weight: 400;
+    margin: 0;
+}
+h1 {
+    font-size: 7rem;
+    line-height: 0.85;
+}
+h2 {
+    font-size: 3.6rem;
+}
+h3 {
+    font-size: 2.4rem;
+}
+/* Links */
+
+a {
+    color: #1C2426;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #767E4D;
+    
+}
+footer a {
+    color: #C7CDD0;
+}
+
+footer a:hover {
+    color: #767E4D;
+}
+
+.content-wrapper {
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 900px;
+}
+/* HOME
+-------------------------------------*/
+.home {
+    background: url(../images/bg-home-office-city.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.home .content-wrapper {
+    
+    flex: 1 0 auto;
+}
+
+.content-bg {
+    background: rgb(255 255 255 / 0.9);
+    padding: 30px;
+}
+
+/*RESUME
+-------------------------------------*/
+.resume header::before {
+    background: url(../images/bg-home-office-city.jpg) center;
+    background-size: cover;
+    content: "";
+    display: block;
+    height: 380px;
+}
+
+.resume-section {
+    margin-bottom: 50;
+}
+.resume-section  h2 {
+    border-bottom: 3px dashed #1C2426;
+    padding-bottom: 6px;
+}
+
+.download-link {
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    background-color: #1C2426; 
+    color: white;
+    padding: 13px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    letter-spacing: 0.1rem;
+    line-height: 1;
+}
+/*PROFILE
+-------------------------------------*/
+
+/*PROJECTS
+-------------------------------------*/
+.project-item {
+    display: flow-root;
+    margin: 30px 0;
+}
+.project-item img {
+    width: 200px;
+    height:200px;
+    float: left;
+    margin-right: 20px;
+    border-radius: 15px;
+    
+}    
+
+.project-item a {
+    background-color: #1C2426; 
+    color: white;
+    padding: 10px 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    letter-spacing: 0.1rem;
+    line-height: 1;
+    
+}
+.project-item a:hover {
+    color: #767E4D;
+}  
+
+/*@media screen and (min-width:860px) {
+
+}*/
+
+/*EDUCATION
+-------------------------------------*/
+
+/*FOOTER
+--------------------------------------*/
+footer {
+    background: #525150 ;
+    color: #C7CDD0;
+    display:flex;  /*aligns the contnet*/
+    justify-content: space-between; 
+    padding: 0 20px;
+}
+
+.socials {
+   list-style: none; /*removes the bullet points*/
+   padding: 0;
+}
+.socials li {
+    display: inline-block;   /*how the elemnts are displayed side by side*/
+    margin-left: 10px;
+}
+.socials img {     /*dessendant selector*/
+    width: 32px;
+
+}
+.socials img:hover {
+    opacity: .4;   /*hover over the icons of socails*/
+}
